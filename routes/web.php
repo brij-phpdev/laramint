@@ -60,6 +60,8 @@ Route::get('/landing_page/{page_url}', [LandingPagesController::class, 'landing_
 Route::post('/verify_mobile/', [WhatsAppDigitalSMSAPIController::class, 'verify_mobile'])->name('verify_mobile');
 //Route::get('/sendSMS/', [WhatsAppDigitalSMSAPIController::class, 'sendSMS']);
 Route::post('/sendSMS/', [OtpMailSMSController::class, 'sendSMS']);
+Route::post('/sendMailOTP/', [OtpMailSMSController::class, 'sendMailOTP']);
+Route::post('/validateMailOTP/', [OtpMailSMSController::class, 'validateMailOTP']);
 Route::post('/student_enroll', [LandingPagesController::class, 'store'])->name('student_enroll.store');
 //Route::get('/create_user/{name}/{email}', [LandingPagesController::class, 'create_user']);
 Route::get('/send_mail', [LandingPagesController::class, 'send_mail']);
@@ -145,6 +147,7 @@ Route::prefix('panel')->middleware(['verified'])->group(function () {
     Route::resource('feedback', FeedbackController::class);
     Route::resource('plan', PlanController::class);
     Route::resource('badges', BadgeController::class);
+    Route::get('/student_doc/dashboard', [AdminStudentDocsController::class, 'dashboard'])->name('admin.studentDashboard');
     Route::resource('student_doc', AdminStudentDocsController::class);
 
 
