@@ -8,46 +8,6 @@
 <!-- About Start -->
 <div class="container-xxl py-5">
     <div class="container py-5 px-lg-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <!--<p class="section-title text-secondary">About Us<span></span></p>-->
-                <h1 class="mb-5">About Us</h1>
-
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <p class="mb-2">Thousands of video examples of language used in real life</p>
-                        <p class="mb-2">85%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <p class="mb-2">Immersive learning that makes you feel like you're right there with the locals</p>
-                        <p class="mb-2">90%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <p class="mb-2">Gamified tests that train your language skills</p>
-                        <p class="mb-2">95%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="front/img/about.png">
-            </div>
-        </div>
-    </div>
-    <div class="container py-5 px-lg-5">
         <div class="row align-items-center">
             <h1 class="text-center mb-5">A Message from Director's desk</h1>
             <div class="col-12 wow fadeInUp" data-wow-delay="0.6s">
@@ -76,7 +36,7 @@
             <div class="col-12 wow fadeInUp" data-wow-delay="0.6s">
                 <p>
                     <br/>
-                    <strong>iCET Computer Education, Agra</strong> is one of the foremost Technical Institute in the state of U.P. It offers certificate programme in Information Technology stream and aim to provide Quality Technician Education to meet the requirement of the changing education scenario. In today’s computing era, computerization has become an essential requirement for every organization to maintain the quantitative pace of organization as well as to derive the high quality training to students. To overcome the pitfalls of manual systems it is advisable to prefer automatic mode of activities by the organization. iCET is not an institute for masses but an institute of an individual. In this the programmers are set up to impart attractive and impressive abilities to the faith to meet the multiplying growth of opportunities in the expanding IT and service industry. It gives an individual not only the computer training but also the spirit of stepping ahead with optimism, because India’s increase potential in the field of IT is recognized by the whole world. We or iCET scope to the youth to meet with the requirement of the IT Industry. The students are trained through the best faculties in a systematic ways and the trends of today.
+                    <strong>iCET Computer Education, Agra</strong> is one of the foremost Technical Institute in the state of U.P. It offers certificate program in Data Innovation stream and plan to give Quality Specialist Training to meet the prerequisite of the changing schooling situation. In today’s computing era, computerization has become an essential requirement for every organization to maintain the quantitative pace of organization as well as to derive the high quality training to students. To overcome the pitfalls of manual systems it is advisable to prefer automatic mode of activities by the organization. iCET is not an institute for masses but an institute of an individual. In this the programmers are set up to impart attractive and impressive abilities to the faith to meet the multiplying growth of opportunities in the expanding IT and service industry. It gives an individual not only the computer training but also the spirit of stepping ahead with optimism, because India’s increase potential in the field of IT is recognized by the whole world. We or iCET scope to the youth to meet with the requirement of the IT Industry. The students are trained through the best faculties in a systematic ways and the trends of today.
                     <br/>
                     <br/>
                     Founded in 2007, ICET Computers has been imparting Computer Training Courses to some of the largest Multi National Companies of India.
