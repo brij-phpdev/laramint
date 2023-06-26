@@ -14,15 +14,16 @@
                     <img class="img-fluid flex-shrink-0 rounded-circle"
              src="{{  $new_file_path }}.webp"
              style="width: 65px; height: 65px;">
-                </picture>
+        </picture>
         <?php }else{
-            $filename = 'img/no-image.jpg';
+            $filename = 'img/no-image';
+            $new_file_path = str_replace('landing_page', '', url($filename));
         ?>
          <picture>
-                    <source type="image/webp" srcset="img/no-image.webp">
-                    <source type="image/jpeg" srcset="{{$filename}}">
-             <img class="img-fluid rounded-circle mb-4" src="{{$filename}}" alt="{{$filename}}" style="width: 64px; height: 64px">
-                </picture>
+                <source type="image/webp" srcset="{{$new_file_path}}.webp">
+                <source type="image/jpeg" srcset="{{$new_file_path}}.jpg">
+                <img class="img-fluid rounded-circle mb-4" src="{{$new_file_path}}.webp" alt="no image" style="width: 65px; height: 65px">
+        </picture>
         <?php } ?>
         <div class="ps-4">
             <h5 class="mb-1">{{$testimonial->testimonial_by}}</h5>
