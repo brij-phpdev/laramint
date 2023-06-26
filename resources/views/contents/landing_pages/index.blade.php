@@ -65,7 +65,7 @@ $referrer_url = $_SERVER['HTTP_REFERER'] ?? '';
 
         <!-- Template Main CSS File -->
         <link href="{{ URL::to('landing_page/assets/css/style.css') }}" rel="stylesheet">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <meta name="csrf-token" content="{{ csrf_token() }}" />
     </head>
 
