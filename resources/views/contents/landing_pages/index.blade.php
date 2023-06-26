@@ -119,11 +119,14 @@ $referrer_url = $_SERVER['HTTP_REFERER'] ?? '';
                 <div class="row">
                     <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
                         <div>
-                            <h1>Scheme Signup page</h1>
-                            <h2>Welcome student, please fill your details & upload appropriate documents to enroll in the scheme. In case of any doubt please <a href="#contact">contact</a>
+                            <h1>नि:शुल्क ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम</h1>
+                            <h2>वर्ष 2023-24
+                                उत्तर प्रदेश सरकार द्वारा ओ.वि.सी. वर्ग के छात्र - छात्राओं  के लिए सुनहरा अवसर. </h2>
+                            <p>पूरी जानकारी के लिए यहां <a target="_blank" class="btn btn-primary" href="{{ URL::asset('files/obc-free-o-level-course-june-2023.pdf') }}">क्लिक करें</a>
+                                
                                 <br/>
-                                <a target="_blank" href="{{ URL::asset('files/obc-free-o-level-course-june-2023.pdf') }}">Click Here To Go To PDF</a>
-                            </h2>
+                                कृपया नीचे दिया गया <a href="#contact" class="btn btn-warning">फॉर्म भरें</a>। <br/>किसी भी संदेह की स्थिति में कृपया <a href="#contact" class="btn btn-info">संपर्क करें</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">

@@ -64,8 +64,8 @@ OBC  फ्री कंप्यूटर कोर्स इन आगरा ,
       "@type": "EducationalOrganization",
       "name": "ICET Agra",
       "url": "https://icet.org.in/",
-      "logo": "https://icet.org.in/img/site-logo.png",
-      "image": "https://icet.org.in/front/img/arvind-sutail.jpg",
+      "logo": "https://icet.org.in/img/site-logo.webp",
+      "image": "https://icet.org.in/front/img/arvind-sutail.webp",
       "description": "iCET Computer Education, Agra is one of the foremost Technical Institute in the state of U.P. It offers certificate program in Data Innovation stream and plan to give Quality Specialist Training to meet the prerequisite of the changing schooling situation. In today’s computing era, computerization has become an essential requirement for every organization to maintain the quantitative pace of organization as well as to derive the high quality training to students. To overcome the pitfalls of manual systems it is advisable to prefer automatic mode of activities by the organization. iCET is not an institute for masses but an institute of an individual. In this the programmers are set up to impart attractive and impressive abilities to the faith to meet the multiplying growth of opportunities in the expanding IT and service industry. It gives an individual not only the computer training but also the spirit of stepping ahead with optimism, because India’s increase potential in the field of IT is recognized by the whole world. We or iCET scope to the youth to meet with the requirement of the IT Industry. The students are trained through the best faculties in a systematic ways and the trends of today.\n\nFounded in 2007, ICET Computers has been imparting Computer Training Courses to some of the largest Multi National Companies of India.\n\nICET is an Internationally reputed Computer Training Institute of Mumbai, with over 15,000 student base and 20 years of reputation for imparting Quality Education in 43 different Computer Courses: Professional, Short term, Career driven, Job & Business Oriented courses for Students, Professionals, Businessmen, Homemaker, as well as for entire family in the field of Office Automation, MS-Office, Advance Excel, Internet Technology, Web Designing Courses, Graphic Designing, AutoCAD Training, 3D Max Training. Top Class computer training courses are provided in our centres. Our Computer Training Institute has over 100 Computers in total in all our computer training classes. We aim to provide World Class Learning Environment in Latest Software & Hardware Courses. We are proud to have one of the best set-ups in the Industry with strength of over 100 State of the Art Computers. Quality Education Since Last 20 Years Undoubtly the Best Computer Training Institute in Mumbai.\n\nWe offer Fast-Track Courses to students who wish to complete their learning in a short period. We have High Emphasis on Projects and Live Assignments\n",
       "telephone": "+91 928 610 5060",
       "email": "icetagr@gmail.com",
@@ -129,6 +129,74 @@ OBC  फ्री कंप्यूटर कोर्स इन आगरा ,
           "image": "https://icet.org.in/front/img/Bhoomika-nigota.jpeg"
         },
             "reviewBody": "Best coaching institute, where students get to explore more about the topics. Each and every doubt of the student is cleared with huge patience."
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Course",
+            "url":"https://icet.org.in/front/courses",
+            "name": "Free O Level Computer Course",
+            "description": "This is .",
+            "provider": {
+              "@type": "Organization",
+              "name": "ICET Computer Education, Agra",
+              "sameAs": "https://icet.org.in/"
+           }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Course",
+            "url":"https://icet.org.in/front/courses",
+            "name": "O Level Foundation Course",
+            "description": "",
+            "provider": {
+              "@type": "Organization",
+              "name": "ICET Computer Education, Agra",
+              "sameAs": "https://icet.org.in/"
+           }
+         }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Course",
+            "url":"https://icet.org.in/front/courses",
+            "name": "CCC-Course on Computer Concepts",
+            "description": "CCC Course on Computer Concepts (CCC) CCC is the basic computer course specially designed by NIELIT which includes Fundamentals of Computer, computer handling on Windows environment, MS-office tools, Internet and its applications. This course is directed towards imparting basic computer skills and awareness to the masses viz. students, office goers, housewives, etc.",
+            "provider": {
+              "@type": "Organization",
+              "name": "ICET Computer Education, Agra",
+              "sameAs": "https://icet.org.in/"
+           }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Course",
+            "url":"https://icet.org.in/front/courses",
+            "name": "BASIC COMPUTER COURSE (BCC)",
+            "description": "Basic Computer Course Basic Computer Course is specially designed for imparting basic computer education to the common man, a prerequisite for meeting the purposes of preparing personnel/business letters, viewing information on Internet (the Web), sending mails etc, via computer. This can accelerate one’s pace in tune with the “I.T. Revolution”.",
+            "provider": {
+              "@type": "Organization",
+              "name": "ICET Computer Education, Agra",
+              "sameAs": "https://icet.org.in/"
+           }
+          }
         }
       ]
     }
