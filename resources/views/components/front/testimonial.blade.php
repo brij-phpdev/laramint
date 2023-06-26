@@ -6,12 +6,13 @@
         if(!empty($testimonial->image)){
         $filepath = 'front/img/' . $testimonial->image;
         $filename = pathinfo($filepath, PATHINFO_FILENAME); 
+        $new_file_path = str_replace('landing_page', '', url('front/img/'.$filename));
         ?>
          <picture>
-                    <source type="image/webp" srcset="front/img/{{$filename}}.webp">
-                    <source type="image/png" srcset="front/img/{{$filename}}.png">
+                    <source type="image/webp" srcset="{{$new_file_path}}.webp">
+                    <source type="image/png" srcset="{{$new_file_path}}.jpeg">
                     <img class="img-fluid flex-shrink-0 rounded-circle"
-             src="{{ URL::to('front/img/' . $testimonial->image) }}"
+             src="{{  $new_file_path }}.webp"
              style="width: 65px; height: 65px;">
                 </picture>
         <?php }else{
