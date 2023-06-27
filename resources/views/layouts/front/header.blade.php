@@ -143,9 +143,9 @@ OBC  फ्री कंप्यूटर कोर्स इन आगरा ,
           "position": 1,
           "item": {
             "@type": "Course",
-            "url":"https://icet.org.in/front/courses",
+            "url":"https://icet.org.in/front/courses#free-o-level-2023-24",
             "name": "Free O Level Computer Course",
-            "description": "This is .",
+            "description": "The O Level course is offered free of charge to candidates belonging to the OBC category whose father's annual income is below one lakh INR.",
             "provider": {
               "@type": "Organization",
               "name": "ICET Computer Education, Agra",
@@ -158,9 +158,9 @@ OBC  फ्री कंप्यूटर कोर्स इन आगरा ,
           "position": 2,
           "item": {
             "@type": "Course",
-            "url":"https://icet.org.in/front/courses",
+            "url":"https://icet.org.in/front/courses#o-level",
             "name": "O Level Foundation Course",
-            "description": "",
+            "description": "The fourth revised version of DOEACC ‘O’ Level (IT) syllabus came into effect in January 2010 examinations. Since then, much advancement has been observed in the area of Information Technology. The need of industry has also changed with the availability of new and advanced technologies and tools. With the advancement in technologies, the software development practices have also changed. This also has led to change in job profile. Different job roles require different skills. Moreover, the digital initiatives taken by Government have also changed the way the business is taking place these days. These factors have led to bringing the revision in syllabus of DOEACC ‘O’ Level (IT) course.",
             "provider": {
               "@type": "Organization",
               "name": "ICET Computer Education, Agra",
@@ -173,7 +173,7 @@ OBC  फ्री कंप्यूटर कोर्स इन आगरा ,
           "position": 3,
           "item": {
             "@type": "Course",
-            "url":"https://icet.org.in/front/courses",
+            "url":"https://icet.org.in/front/courses#ccc",
             "name": "CCC-Course on Computer Concepts",
             "description": "CCC Course on Computer Concepts (CCC) CCC is the basic computer course specially designed by NIELIT which includes Fundamentals of Computer, computer handling on Windows environment, MS-office tools, Internet and its applications. This course is directed towards imparting basic computer skills and awareness to the masses viz. students, office goers, housewives, etc.",
             "provider": {

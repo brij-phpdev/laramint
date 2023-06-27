@@ -181,7 +181,9 @@ class LandingPagesController extends Controller
             if(isset($last_user_in_stud_records) && $last_user_in_stud_records->user_id>$last_user_id){
                 $last_user_id = $last_user_in_stud_records->user_id;
             }
-            $testimonials = Testimonial::all();
+//            $sms_key_val = App\Models\Configuration::where('config_type','fast2sms')->pluck('config_value');
+//            var_dump($sms_key_val);
+            $testimonials = Testimonial::all()->take(5);
             $last_user_id++;
             return view("contents.landing_pages.index", compact("page_title",'grades','caste_categories','last_user_id','testimonials'));
         }
