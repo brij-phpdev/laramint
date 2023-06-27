@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Mail;
 use App\Mail\StudentMail;
 use App\Models\User;
+use App\Models\Configuration;
 
 class OtpMailSMSController extends Controller {
 
@@ -87,6 +88,10 @@ class OtpMailSMSController extends Controller {
         //
     }
 
+    /**
+     * @todo Send OTP to the mobile user
+     * @param Request $request
+     */
     public function verify_mobile(Request $request) {
         $send_otp = false;
 //        $http_refferer = Request::server('HTTP_REFERER'); //request()->headers->get('referer');
@@ -301,6 +306,10 @@ class OtpMailSMSController extends Controller {
         echo json_encode($return_array);
     }
 
+    /**
+     * 
+     * @param Request $request
+     */
     public function validateSMSOTP(Request $request) {
         $student_mobile = $request->student_mobile;
 
