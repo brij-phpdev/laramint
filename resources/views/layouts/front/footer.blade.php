@@ -157,7 +157,7 @@
         "height": "72 inches",
         "gender": "male",
         "url": "https://www.linkedin.com/in/arvind-sutail-30964627b/",
-        "image": "https://icet.org.in/front/img/arvind-sutail.webp",
+        "image": "https://icet.org.in/front/img/arvind-sutail.jpg",
         "address": {
            "@type": "PostalAddress",
            "streetAddress": "½ C, Panchkuian Road",
@@ -182,7 +182,7 @@
         "height": "65 inches",
         "gender": "male",
         "url": "https://www.linkedin.com/in/brijrajsingh27/",
-        "image": "https://icet.org.in/front/img/CTO-Brij-Raj-Singh.webp",
+        "image": "https://icet.org.in/front/img/CTO-Brij-Raj-Singh.jpg",
         "address": {
            "@type": "PostalAddress",
            "streetAddress": "Agra",
@@ -208,7 +208,7 @@
         "height": "62 inches",
         "gender": "female",
         "url": "https://www.facebook.com/moni.tarun?mibextid=ZbWKwL",
-        "image": "https://icet.org.in/front/img/monika.webp",
+        "image": "https://icet.org.in/front/img/monika.jpeg",
         "address": {
            "@type": "PostalAddress",
            "streetAddress": "Agra",
