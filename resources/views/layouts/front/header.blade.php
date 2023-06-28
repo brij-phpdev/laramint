@@ -39,7 +39,7 @@ OBC  फ्री कंप्यूटर कोर्स इन आगरा ,
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@ OBC  फ्री कंप्यूटर कोर्स इन आगरा ,
     <link href="{{ URL::to('front/css/style.css') }}" rel="stylesheet">
     
     <script nonce="<?php echo base64_encode(random_bytes(10)) ?>" src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script nonce="<?php echo base64_encode(random_bytes(10)) ?>"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type='application/ld+json'>
     {
       "@context": "http://www.schema.org",
