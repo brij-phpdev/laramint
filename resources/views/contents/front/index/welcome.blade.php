@@ -250,7 +250,7 @@
 
 <!--Work experience-->
 
-<div class="container-xxl bg-light fact- py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-xxl bg-light fact- py-5 wow fadeInUp d-none" data-wow-delay="0.1s">
     <div class="container py-5 px-lg-5">
         <div class="wow fadeInUp" data-wow-delay="0.1s">
             <p class="section-title text-secondary justify-content-center"><span></span>Work Experience<span></span></p>
@@ -261,10 +261,10 @@
 
             <div class="col-4 ">
                 <!-- Card -->
-                <div
+<!--                <div
                   class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
                   style="background-image: url('https://voters.eci.gov.in/static/media/Portallogo.239672214918b407e9c7d3e4312b8ac4.svg'); background-position: center; background-attachment: fixed;"
-                >
+                >-->
                   <div class="card-body bg-light rounded">
                     <h5 class="card-title">Voter ID Card</h5>
                     <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
@@ -279,10 +279,10 @@
             
             <div class="col-4 ">
                 <!-- Card -->
-                <div
+<!--                <div
                   class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
                   style="background-image: url('https://sewayojan.up.nic.in/webassets/images/upgovt_mri.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
-                >
+                >-->
                   <div class="card-body bg-light rounded">
                     <h5 class="card-title">Berojgaari Bhatta</h5>
                     <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
@@ -296,10 +296,10 @@
             
             <div class="col-4 ">
                 <!-- Card -->
-                <div
+<!--                <div
                   class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
                   style="background-image: url('https://www.upmsp.edu.in/images/logonamebig.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
-                >
+                >-->
                   <div class="card-body bg-light rounded">
                     <h5 class="card-title">Kanya Vidhya Dhan</h5>
                     <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">

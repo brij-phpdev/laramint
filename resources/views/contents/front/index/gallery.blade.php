@@ -188,8 +188,10 @@
 
 <!-- About End -->
 
+@endsection
 
-<script type="text/javascript">
+@section('footer-scripts')
+<script type="text/javascript" nonce="<?php echo $js_nounce ?>">
     // $('.portfolio-item').isotope({
     //  	itemSelector: '.item',
     //  	layoutMode: 'fitRows'
@@ -214,5 +216,4 @@
         });
     });
 </script>
-
 @endsection
