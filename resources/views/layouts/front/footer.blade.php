@@ -1,3 +1,4 @@
+<?php // $js_nounce = base64_encode(random_bytes(10)); ?>
 <!-- Footer Start -->
 <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5 px-lg-5">
@@ -33,10 +34,10 @@
                 <p class="section-title text-white h5 mb-4">Accredited By<span></span></p>
                 <div class="row g-2">
                     <div class="col-6">
-                        <img class="img-fluid" src="{{ URL::to('img/NIELIT-LOGO.webp') }}" alt="Image">
+                        <img class="img-fluid" src="{{ URL::to('img/NIELIT-LOGO.webp') }}" alt="nielit logo">
                     </div>
                     <div class="col-6">
-                        <img class="img-fluid" width="135px" src="{{ URL::to('img/UPDESCO-LOGO.webp') }}" alt="Image">
+                        <img class="img-fluid" width="135px" src="{{ URL::to('img/UPDESCO-LOGO.webp') }}" alt="updesco logo">
                     </div>
                 </div>
                 <div class="row g-2">
@@ -114,7 +115,7 @@
                 $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
 //                echo $file_url;
                 ?>
-                <img src="{{$file_url}}" class="img-fluid" />
+                <img src="{{$file_url}}" class="img-fluid" alt="Free OBC programm O level 2023-24" />
             </div>
             <div class="modal-footer">
                 <a class="btn btn-primary" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
@@ -132,22 +133,22 @@
 
 
 <!-- JavaScript Libraries -->
-<script nonce="<?php echo base64_encode(random_bytes(10)) ?>"  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script nonce="<?php echo base64_encode(random_bytes(10)) ?>"  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ URL::to('front/lib/wow/wow.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/easing/easing.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/waypoints/waypoints.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/counterup/counterup.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/isotope/isotope.pkgd.min.js') }}"></script>
-<script src="{{ URL::to('front/lib/lightbox/js/lightbox.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Template Javascript -->
 <script src="{{ URL::to('front/js/main.js') }}"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<link rel="preconnect" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<script nonce="<?php echo $js_nounce ?>" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script nonce="<?php echo $js_nounce ?>" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 <script type='application/ld+json'>
 {
   "@context": "http://www.schema.org",
@@ -226,7 +227,7 @@
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2Y2ZTSGHN"></script>
-<script>
+<script nonce="<?php echo $js_nounce ?>">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

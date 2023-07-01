@@ -25,6 +25,7 @@
         
     
         @include('layouts.front.footer')
+        @yield('footer-scripts' )
     </div>
 </body>
 </html>

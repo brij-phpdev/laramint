@@ -4,9 +4,16 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Services\Front\HomeServices;
+use Illuminate\Support\Str;
 
 class FrontController extends Controller
 {
+
+    public $nounce;
+
+    public function __construct(){
+        $this->nounce = Str::random(32);
+    }
 
 
     /**
@@ -18,8 +25,7 @@ class FrontController extends Controller
     {
 
         $homeCompactReturn = $homeServices->homeIndex();
-
-        return view('contents.front.index.welcome', $homeCompactReturn);
+        return view('contents.front.index.welcome', $homeCompactReturn)->with('js_nounce',$this->nounce);
 //        return view('welcome', $homeCompactReturn);
     }
 
@@ -30,7 +36,7 @@ class FrontController extends Controller
      */
     public function about()
     {
-        return view('contents.front.index.about');
+        return view('contents.front.index.about')->with('js_nounce',$this->nounce);
     }
 
     /**
@@ -40,7 +46,7 @@ class FrontController extends Controller
      */
     public function gallery()
     {
-        return view('contents.front.index.gallery');
+        return view('contents.front.index.gallery')->with('js_nounce',$this->nounce);
     }
 
     /**
@@ -50,7 +56,7 @@ class FrontController extends Controller
      */
     public function contact()
     {
-        return view('contents.front.index.contact');
+        return view('contents.front.index.contact')->with('js_nounce',$this->nounce);
     }
     
     /**
@@ -60,7 +66,7 @@ class FrontController extends Controller
      */
     public function news()
     {
-        return view('contents.front.index.news');
+        return view('contents.front.index.news')->with('js_nounce',$this->nounce);
     }
 
     
