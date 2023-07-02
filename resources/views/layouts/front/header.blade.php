@@ -6,7 +6,7 @@
 
     <!--<meta http-equiv="Content-Security-Policy" content="script-src 'sha256-8N7YYQlfp8Sqj0AkuGY78AV1QpOwg9SrGbSZADPeerc=';">-->
     
-    <meta http-equiv="Content-Security-Policy:" content="default-src 'none'; form-action 'self'; frame-ancestors 'none'; style-src 'self' https://fonts.googleapis.com/; img-src 'self' data:; font-src https://fonts.gstatic.com/; script-src 'self' https://www.google-analytics.com/analytics.js https://code.jquery.com/jquery-1.12.4.js http://cdnjs.cloudflare.com 'unsafe-inline';">
+    <meta http-equiv="Content-Security-Policy:" content="default-src 'none'; form-action 'self'; frame-ancestors 'none'; style-src 'self' https://fonts.googleapis.com/; img-src 'self' data:; font-src https://fonts.gstatic.com/; script-src 'self' 'script-src-elem' https://www.google-analytics.com/analytics.js https://code.jquery.com/jquery-1.12.4.js http://cdnjs.cloudflare.com 'unsafe-inline';">
 
     <title>ICET Computer Coaching, Agra | Best computer coaching in Agra</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
