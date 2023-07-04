@@ -17,7 +17,7 @@ class QuizSeed extends Seeder
     public function run()
     {
 
-        for ($counter = 1; $counter <= 7; $counter++) {
+        for ($counter = 1; $counter <= 2; $counter++) {
             \App\Models\Quiz::factory()->create([
                 'title' => 'Quiz #' . $counter,
                 'attempt' => 3,
