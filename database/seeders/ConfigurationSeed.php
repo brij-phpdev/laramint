@@ -55,5 +55,13 @@ class ConfigurationSeed extends Seeder
             'config_value' => json_encode(10),
             'config_category' => 'global'
         ]);
+
+
+        \App\Models\Configuration::factory()->create([
+            'config_type' => 'Fast2SMS',
+            'config_value' => json_encode(array('api_key'=>'XwyZHQrajqWubf2iNCcsF0REpLGme9IUzdBSMonD4Y36t7vxlh4Hn5qXkx6cieSCVdw1INO3gEQTlMDR',
+                'api_url'=>'https://www.fast2sms.com/dev/bulkV2','OTP_wait_time'=>'-10 minutes')),
+            'config_category' => 'global'
+        ]);
     }
 }
