@@ -36,6 +36,8 @@ use App\Http\Controllers\RubricController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Route;
+use App\Support\Csp\Policies\RistrictPolicy;
+use Spatie\Csp\AddCspHeaders;
 
 
 /*
