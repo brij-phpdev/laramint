@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Services\Front\HomeServices;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Vite;
+
 
 class FrontController extends Controller
 {
@@ -24,8 +26,12 @@ class FrontController extends Controller
     public function index(HomeServices $homeServices)
     {
 
+        Vite::useCspNonce();
+//        echo Vite::cspNonce();
         $homeCompactReturn = $homeServices->homeIndex();
-        return view('contents.front.index.welcome', $homeCompactReturn)->with('js_nounce',$this->nounce);
+        return view('contents.front.index.welcome', $homeCompactReturn)->withHeaders([
+            'Content-Security-Policy' => "script-src 'nonce-".Vite::cspNonce()."'",
+        ]);
 //        return view('welcome', $homeCompactReturn);
     }
 

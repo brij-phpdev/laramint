@@ -31,6 +31,7 @@
                                 <th scope="col">{{ __("Student Name") }}</th>
                                 <th scope="col">{{ __("Mobile") }}</th>
                                 <th scope="col">{{ __("Email") }}</th>
+                                <th scope="col">{{ __("Category") }}</th>
                                 <th scope="col">{{ __("Is Mobile Verified") }}</th>
                                 <th scope="col">{{ __("Is Email Verified") }}</th>
 
@@ -47,10 +48,16 @@
                                     {{ $student_doc->name }}
                                 </td>
                                 <td>
-                                    <a title="send reminder on whatsapp" href="`https://wa.me/{{ $student_doc->mobile }}?text={{urlencode($whatsAppReminderMsg)}}`" target="_blank"> {{ $student_doc->mobile }}</a>
+                                    {{ $student_doc->mobile }}<br/>
+                                    <a class="fa fa-phone" title="Call" href="tel:{{ $student_doc->mobile }}" target="_blank"> Call</a> |
+                                    <a class="fa fa-sms" title="send sms on mobile" href="#" target="_blank"> Send SMS</a> |
+                                    <a class="fab fa-whatsapp-square" title="send reminder on whatsapp" href="https://wa.me/{{ $student_doc->mobile }}?text={{urlencode($whatsAppReminderMsg)}}" target="_blank"> WhatsApp Reminder</a>
                                 </td>
                                 <td>
                                     {{ $student_doc->email }}
+                                </td>
+                                <td>
+                                    {{ $caste_categories[$student_doc->category] }}
                                 </td>
                                 <td>
                                     <i class="fa fa-{{ $student_doc->is_mobile_verified ? 'check-circle text-success' : 'times-circle text-danger' }}"></i>

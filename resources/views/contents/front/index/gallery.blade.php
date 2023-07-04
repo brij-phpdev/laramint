@@ -3,7 +3,7 @@
 
 @section("content")
 
-<style type="text/css">
+<style type="text/css" nonce="{{ csp_nonce() }}">
     .portfolio-menu{
         text-align:center;
     }
@@ -191,7 +191,7 @@
 @endsection
 
 @section('footer-scripts')
-<script type="text/javascript" nonce="<?php echo $js_nounce ?>">
+<script nonce="{{ csp_nonce() }}">
     // $('.portfolio-item').isotope({
     //  	itemSelector: '.item',
     //  	layoutMode: 'fitRows'

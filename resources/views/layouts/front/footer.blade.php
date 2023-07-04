@@ -1,4 +1,3 @@
-<?php // $js_nounce = base64_encode(random_bytes(10)); ?>
 <!-- Footer Start -->
 <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5 px-lg-5">
@@ -145,10 +144,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Template Javascript -->
-<script src="{{ URL::to('front/js/main.js') }}"></script>
+<script nonce="{{ csp_nonce() }}" src="{{ URL::to('front/js/main.js') }}"></script>
 <link rel="preconnect" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-<script nonce="<?php echo $js_nounce ?>" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-<script nonce="<?php echo $js_nounce ?>" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 <script type='application/ld+json'>
 {
   "@context": "http://www.schema.org",
@@ -227,7 +226,7 @@
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2Y2ZTSGHN"></script>
-<script nonce="<?php echo $js_nounce ?>">
+<script nonce="{{ csp_nonce() }}">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
