@@ -19,7 +19,6 @@ class RistrictPolicy extends Basic {
 
         // We can add our own policy directives here...
         $this->addDirective(Directive::SCRIPT, [
-//            'none',
             'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js',
                     'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js',
                     // footer js start
