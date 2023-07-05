@@ -36,6 +36,7 @@
                                 <th scope="col">{{ __("Is Email Verified") }}</th>
                                 <th scope="col">{{ __("Father Income (in INR)") }}</th>
                                 <th scope="col">{{ __("Documents Uploaded") }}</th>
+                                <th scope="col">{{ __("Registration Date") }}</th>
 
                                 @if(Auth::user()->hasRole('Super-Admin') || Auth::user()->hasRole('Super-Admin') || Auth::user()->hasAnyPermission(['department.edit' , 'department.delete']))
                                 <th scope="col">{{ __("Action") }}</th>
@@ -45,7 +46,7 @@
                         <tbody>
                             @forelse ($student_docs as $student_doc)
                             <tr>
-                                <th scope="row">{{ $loop->iteration }}</th>
+                                <th scope="row">{{ $loop->iteration + $student_docs->firstItem() - 1 }}</th>
                                 <td>
                                     {{ $student_doc->name }}
                                 </td>
@@ -82,7 +83,9 @@
                                     
                                 </td>
 
-
+                                <td>
+                                   {{ date('d M Y h:i a',strtotime($student_doc->created_at))}}
+                                </td>
 
 
                                 <td>
