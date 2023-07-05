@@ -1,7 +1,7 @@
 <head itemscope itemtype="https://schema.org/WebPage">
     <meta charset="utf-8">
     <base href="{{URL::to('/')}}" />
-    <base target="_blank" />
+    <!--<base target="_blank" />-->
     <base target="_top" href="{{URL::to('/')}}" />
     <!--<meta http-equiv="Content-Security-Policy:" content="default-src 'none'; form-action 'self'; frame-ancestors 'none'; style-src 'self' https://fonts.googleapis.com/; img-src 'self' data:; font-src https://fonts.gstatic.com/; script-src 'self' 'script-src-elem' https://www.google-analytics.com/analytics.js https://code.jquery.com/jquery-1.12.4.js http://cdnjs.cloudflare.com 'unsafe-inline';">-->
         <!--<meta http-equiv="Content-Security-Policy" content="base-uri 'self';connect-src 'self';default-src 'self';form-action 'self';img-src 'self' data;media-src 'self';object-src 'none';script-src 'self' 'nonce-aWrZDM24W9q0G91t0qqJ9ayOXMIGxZFw' 'unsafe-inline' https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js https://code.jquery.com/jquery-3.7.0.min.js https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js https://www.googletagmanager.com/gtag/;style-src 'self' 'nonce-aWrZDM24W9q0G91t0qqJ9ayOXMIGxZFw' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">--> 
