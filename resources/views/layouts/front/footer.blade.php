@@ -140,7 +140,7 @@
 <script src="{{ URL::to('front/lib/counterup/counterup.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/isotope/isotope.pkgd.min.js') }}"></script>
-<script src="{{ URL::to('front/lib/lightbox/js/lightbox.min.js') }}"></script>
+<script src="{{ URL::to('front/lib/lightbox/js/lightbox.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Template Javascript -->

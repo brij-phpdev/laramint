@@ -4,7 +4,7 @@
 @section("content")
 
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
@@ -32,7 +32,7 @@
 	
                     @if($total_applications > 0)
                     <div class="m-1">
-                        <span class="badge badge-pill badge-default"> {{ $total_applications }}</span>
+                        <span class="badge badge-pill badge-default"> Total number of applicants {{ $total_applications }}</span>
                     </div>
                     @endif
                 </div>
