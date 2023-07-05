@@ -132,7 +132,7 @@
 
 
 <!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ URL::to('front/lib/wow/wow.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/easing/easing.min.js') }}"></script>
@@ -140,7 +140,7 @@
 <script src="{{ URL::to('front/lib/counterup/counterup.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 <script src="{{ URL::to('front/lib/isotope/isotope.pkgd.min.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="{{ URL::to('front/lib/lightbox/js/lightbox.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Template Javascript -->
