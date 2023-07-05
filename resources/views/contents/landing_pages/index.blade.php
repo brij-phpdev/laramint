@@ -85,7 +85,7 @@ $referrer_url = $_SERVER['HTTP_REFERER'] ?? '';
                         <li><a class="nav-link scrollto active" href="{{route('home')}}" onclick="return checkHomePage();">Home</a></li>
                         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                         <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-                        <li><a class="getstarted scrollto" href="#contact">Register For O Free Level</a></li>
+                        <li><a class="getstarted scrollto" href="#contact">Register for Free 'O' Level</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
