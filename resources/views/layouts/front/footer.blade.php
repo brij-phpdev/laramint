@@ -106,7 +106,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                
+                <a class="btn-block btn btn-sm btn-primary" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                    <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
+                </a>
                 <?php 
                 $filename_top = 'course/July-2023-banner.jpeg';
                 $filetype_top = pathinfo($filename_top, PATHINFO_EXTENSION);
@@ -125,7 +127,7 @@
             </div>
             <div class="modal-footer">
                 <a class="btn btn-primary" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
-                    <i class="fa fa-arrow-right"></i> {{ __('Click Here') }}
+                    <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
                 </a>
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
