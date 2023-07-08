@@ -1,12 +1,13 @@
 <head itemscope itemtype="https://schema.org/WebPage">
     <meta charset="utf-8">
     <base href="{{URL::to('/')}}" />
-    <!--<base target="_blank" />-->
     <base target="_top" href="{{URL::to('/')}}" />
     <!--<meta http-equiv="Content-Security-Policy:" content="default-src 'none'; form-action 'self'; frame-ancestors 'none'; style-src 'self' https://fonts.googleapis.com/; img-src 'self' data:; font-src https://fonts.gstatic.com/; script-src 'self' 'script-src-elem' https://www.google-analytics.com/analytics.js https://code.jquery.com/jquery-1.12.4.js http://cdnjs.cloudflare.com 'unsafe-inline';">-->
         <!--<meta http-equiv="Content-Security-Policy" content="base-uri 'self';connect-src 'self';default-src 'self';form-action 'self';img-src 'self' data;media-src 'self';object-src 'none';script-src 'self' 'nonce-aWrZDM24W9q0G91t0qqJ9ayOXMIGxZFw' 'unsafe-inline' https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js https://code.jquery.com/jquery-3.7.0.min.js https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js https://www.googletagmanager.com/gtag/;style-src 'self' 'nonce-aWrZDM24W9q0G91t0qqJ9ayOXMIGxZFw' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">--> 
     <title>ICET Computer Coaching, Agra | Best computer coaching in Agra</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta property="csp-nonce" content="{{ csp_nonce() }}">
+    <!--@cspMetaTag(App\Support\Csp\Policies\RistrictPolicy::class)-->
     <meta content="ICET Agra,
           Computer Center,
           Computer Education in Agra,
@@ -36,15 +37,14 @@
           सरकारी कंप्यूटर कोर्स प्रोग्राम,
           ओ लेवल फॉर OBC," name="keywords">
     <meta content="iCET Computer Education, Agra is one of the foremost Technical Institute in the state of U.P. It offers certificate program in Data Innovation stream and plan to give Quality Specialist Training to meet the prerequisite of the changing schooling situation. In today’s computing era, computerization has become an essential requirement for every organization to maintain the quantitative pace of organization as well as to derive the high quality training to students. To overcome the pitfalls of manual systems it is advisable to prefer automatic mode of activities by the organization. iCET is not an institute for masses but an institute of an individual. In this the programmers are set up to impart attractive and impressive abilities to the faith to meet the multiplying growth of opportunities in the expanding IT and service industry. It gives an individual not only the computer training but also the spirit of stepping ahead with optimism, because India’s increase potential in the field of IT is recognized by the whole world. We or iCET scope to the youth to meet with the requirement of the IT Industry. The students are trained through the best faculties in a systematic ways and the trends of today.\n\nFounded in 2007, ICET Computers has been imparting Computer Training Courses to some of the largest Multi National Companies of India.\n\nICET is an Internationally reputed Computer Training Institute of Mumbai, with over 15,000 student base and 20 years of reputation for imparting Quality Education in 43 different Computer Courses: Professional, Short term, Career driven, Job & Business Oriented courses for Students, Professionals, Businessmen, Homemaker, as well as for entire family in the field of Office Automation, MS-Office, Advance Excel, Internet Technology, Web Designing Courses, Graphic Designing, AutoCAD Training, 3D Max Training. Top Class computer training courses are provided in our centres. Our Computer Training Institute has over 100 Computers in total in all our computer training classes. We aim to provide World Class Learning Environment in Latest Software & Hardware Courses. We are proud to have one of the best set-ups in the Industry with strength of over 100 State of the Art Computers. Quality Education Since Last 20 Years Undoubtly the Best Computer Training Institute in Mumbai.\n\nWe offer Fast-Track Courses to students who wish to complete their learning in a short period. We have High Emphasis on Projects and Live Assignments\n" name="description">
-    <meta property="csp-nonce" content="{{ csp_nonce() }}">
-    <!--@cspMetaTag(App\Support\Csp\Policies\RistrictPolicy::class)-->
+    
     <!-- Favicon -->
     <!--<link href="img/favicon.ico" rel="icon">-->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">

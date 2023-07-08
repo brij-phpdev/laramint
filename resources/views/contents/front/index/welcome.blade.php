@@ -2,8 +2,6 @@
 
 
 @section("content")
-@php($path = 8)
-@svg($path)
 <div class="container-xxl bg-primary hero-header">
     <div class="container px-lg-5">
         <div class="row">
@@ -32,7 +30,24 @@
                 
             </div>
         </div>
+        <div class="row mt-5">
+
+            <?php 
+            $filename_top = 'course/July-2023-banner.jpeg';
+            $filetype_top = pathinfo($filename_top, PATHINFO_EXTENSION);
+            $imgbinary_top = fread(fopen($filename_top, "r"), filesize($filename_top));
+            $file_url_top = 'data:image/' . $filetype_top . ';base64,' . base64_encode($imgbinary_top);
+
+            $filename = 'course/free-obc-program-O-level-2023-24.webp';
+            $filetype = pathinfo($filename, PATHINFO_EXTENSION);
+            $imgbinary = fread(fopen($filename, "r"), filesize($filename));
+            $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
+//                echo $file_url;
+            ?>
+            <img src="{{$file_url_top}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
+        </div>
     </div>
+    
 </div>
 <!-- Department Start -->
 @if(count($departments) > 1)
