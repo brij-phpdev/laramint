@@ -36,8 +36,9 @@
                                 <th scope="col">{{ __("Is Email Verified") }}</th>
                                 <th scope="col">{{ __("Father Income (in INR)") }}</th>
                                 <th scope="col">{{ __("Documents Uploaded") }}</th>
-                                <th scope="col">{{ __("Registration Date") }}</th>
 
+                                <th scope="col">{{ __("Registration From") }}</th>
+                                <th scope="col">{{ __("Registration Date") }}</th>
                                 @if(Auth::user()->hasRole('Super-Admin') || Auth::user()->hasRole('Super-Admin') || Auth::user()->hasAnyPermission(['department.edit' , 'department.delete']))
                                 <th scope="col">{{ __("Action") }}</th>
                                 @endif
@@ -78,11 +79,19 @@
                                     <a href="{{asset($father_income_img)}}" class="fancylight popup-btn" data-fancybox-group="light"> 
                                         <img src="{{asset($father_income_img)}}" height="auto" width="180px" class="img-thumbnail" alt="Photograph" />
                                     </a>
-                                    
+                                    <span class="btn btn-light text-sm">Father's Income Certificate</span>
                                     @endif
                                     
                                 </td>
 
+                                <td>
+                                    @php
+                                    $sourceUrl = parse_url($student_doc->referrer_url);
+                                    @endphp
+                                    @if(!empty($sourceUrl))
+                                    {{ $sourceUrl['host'] ?? 'Site/Unknown' }}
+                                    @endif
+                                </td>
                                 <td>
                                    {{ date('d M Y h:i a',strtotime($student_doc->created_at))}}
                                 </td>

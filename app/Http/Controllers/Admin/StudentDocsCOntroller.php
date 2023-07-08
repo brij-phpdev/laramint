@@ -25,6 +25,11 @@ class StudentDocsCOntroller extends Controller
         return view("contents.admin.student_docs.index", compact("student_docs",'whatsAppReminderMsg','caste_categories'));
     }
 
+    public function getHostName($referrer_url) {
+        $sourceUrl = parse_url($referrer_url);
+        return $sourceUrl['host'] ?? 'Site/Unknown';
+    }
+    
     public function dashboard()
     {
         $this->authorize('student_doc.dashboard');
@@ -39,8 +44,24 @@ class StudentDocsCOntroller extends Controller
         $data['label'] = ['Verified Mobiles','Mobile Not Verified', 'Verified Email','Email Not Verified'];
         $data['data'] = [$verified_mobile_applications,$not_verified_mobile_applications,$verified_email_applications,$not_verified_email_applications];
         $data['chart_data'] = json_encode($data);
+        
+        // registered data source chart
+        
+        // source
+        
+        $all_referrer_urls = StudentDocs::pluck('referrer_url')->toArray();
+        $all_unique_referrals = array();
+        foreach($all_referrer_urls as $array){
+            $all_unique_referrals[] = str_replace("www.","",$this->getHostName($array));
+        }
+        $url_referals = array_count_values($all_unique_referrals);
+        $source_data['label'] = array_keys($url_referals);
+        $source_data['data'] = array_values($url_referals);
+        $source_data['chart_data'] = json_encode($source_data);
+        
+        
         return view("contents.admin.student_docs.dashboard", compact("total_applications",'verified_mobile_applications',
-                'not_verified_mobile_applications','verified_email_applications','not_verified_email_applications','data'));
+                'not_verified_mobile_applications','verified_email_applications','not_verified_email_applications','data','source_data'));
     }
 
     /**
