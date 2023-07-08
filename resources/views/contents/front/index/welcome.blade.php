@@ -32,6 +32,9 @@
         </div>
         <div class="row mt-5">
 
+            <a class="btn-block btn btn-sm btn-secondary mb-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                    <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
+                </a>
             <?php 
             $filename_top = 'course/July-2023-banner.jpeg';
             $filetype_top = pathinfo($filename_top, PATHINFO_EXTENSION);
@@ -44,7 +47,12 @@
             $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
 //                echo $file_url;
             ?>
-            <img src="{{$file_url_top}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
+            <a href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                <img src="{{$file_url_top}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
+            </a>
+            <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                    <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
+                </a>
         </div>
     </div>
     
