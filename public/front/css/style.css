@@ -869,3 +869,7 @@ flip card
     animation: blink normal 4s infinite ease-in-out; /* Opera and prob css3 final iteration */
 }
 /* Blink Image ends here */
+
+.footer_top a.active,.footer-menu a:hover, .footer-menu a.active {
+    color: var(--secondary) !important;
+}
