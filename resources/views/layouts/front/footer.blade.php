@@ -16,18 +16,18 @@
                     <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/groups/617435264962620"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.instagram.com/arvindsutail/"><i class="fab fa-instagram"></i></a>
                     <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/in/icet-computer-education-47b91865/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" target="_blank" href="https://t.me/icetagr"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 footer_top">
                 <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                <a class="btn btn-link" href="{{ route('home') }}">Home</a>
-                <a class="btn btn-link" href="{{ route('about') }}">About Us</a>
+                <a class="btn btn-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
+                <a class="btn btn-link {{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{ route('about') }}">About Us</a>
                 <!--<a class="btn btn-link" href="{{ route('front.courses') }}">Courses</a>-->
-                <a class="btn btn-link" href="{{ route('front.news') }}">News</a>
-                <a class="btn btn-link" href="{{ route('gallery') }}">Gallery</a>
-                <a class="btn btn-link" href="{{ route('contact') }}">Contact Us</a>
-                <!--                <a class="btn btn-link" href="#">Terms & Condition</a>
-                                <a class="btn btn-link" href="#">Career</a>-->
+                <a class="btn btn-link {{ Route::currentRouteName() == 'front.news' ? 'active' : '' }}" href="{{ route('front.news') }}">News</a>
+                <a class="btn btn-link {{ Route::currentRouteName() == 'gallery' ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a>
+                <a class="btn btn-link {{ Route::currentRouteName() == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
+                
             </div>
             <div class="col-md-12 col-lg-6">
                 <p class="section-title text-white h5 mb-4">Accredited By<span></span></p>
@@ -64,11 +64,11 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
-                        <a href="{{ route('home') }}">Home</a>
-                        <a href="{{ route('about') }}">About</a>
-                        <a href="{{ route('front.news') }}">News</a>
-                        <a href="{{ route('gallery') }}">Gallery</a>
-                        <a href="{{ route('contact') }}">Contact Us</a>
+                        <a class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
+                        <a class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{ route('about') }}">About</a>
+                        <a class="{{ Route::currentRouteName() == 'front.news' ? 'active' : '' }}" href="{{ route('front.news') }}">News</a>
+                        <a class="{{ Route::currentRouteName() == 'gallery' ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a>
+                        <a class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,10 @@
         <li><i class="text-warning fa-rotate-by fa fa-certificate"></i><a href="{{route('landingPage','free-o-level-2023-24#contact')}}"><span>Apply for free O-level course</span></a></li>
         <li><i class="fa fa-phone"></i><a href="tel:+91-9719522999"><span>+91 971 952 2999</span>  </a></li>
         <li><i class="fa fa-envelope"></i><a href="mailto:icetagr@gmail.com"><span>icetagr@gmail.com</span> </a></li>
-        <li><i class="fa fa-share"></i> <span class="fixed_social"> <a href="https://www.facebook.com/groups/617435264962620"><i class="bi bi-facebook"></i></a> <a href="https://www.instagram.com/arvindsutail/"><i class="bi bi-instagram"></i></a> <a href="https://twitter.com/icetagra"><i class="bi bi-twitter"></i></a><a href="https://twitter.com/icetagra"><i class="bi bi-linkedin"></i></a> </span> </li>
+        <li><i class="fa fa-share"></i> <span class="fixed_social"> <a href="https://www.facebook.com/groups/617435264962620"><i class="bi bi-facebook"></i></a> <a href="https://www.instagram.com/arvindsutail/"><i class="bi bi-instagram"></i></a> <a href="https://twitter.com/icetagra"><i class="bi bi-twitter"></i></a>
+                <a href="https://twitter.com/icetagra"><i class="bi bi-linkedin"></i></a> 
+                <a href="https://t.me/icetagr"><i class="bi bi-telegram"></i></a> 
+            </span> </li>
     </ul>
 </div>
 

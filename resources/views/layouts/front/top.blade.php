@@ -11,14 +11,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto py-0">
-            <a href="{{ route('home') }}" class="nav-item nav-link">Home</a>
-            <a href="{{ route('about') }}" class="nav-item nav-link">About Us</a>
+            <a href="{{ route('home') }}" class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }} nav-item nav-link">Home</a>
+            <a href="{{ route('about') }}" class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }} nav-item nav-link">About Us</a>
 <!--            <a href="{{ route('front.courses') }}" class="nav-item nav-link">Courses</a>
             <a href="{{ route('front.plans') }}" class="nav-item nav-link">Plans</a>-->
-            <a href="{{ route('front.news') }}" class="nav-item nav-link">News</a>
+            <a href="{{ route('front.news') }}" class=" {{ Route::currentRouteName() == 'front.news' ? 'active' : '' }} nav-item nav-link">News</a>
 
-            <a href="{{ route('gallery') }}" class="nav-item nav-link">Gallery</a>
-            <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
+            <a href="{{ route('gallery') }}" class="{{ Route::currentRouteName() == 'gallery' ? 'active' : '' }} nav-item nav-link">Gallery</a>
+            <a href="{{ route('contact') }}" class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }} nav-item nav-link">Contact</a>
         </div>
         @if (Route::has('login'))
         @auth
