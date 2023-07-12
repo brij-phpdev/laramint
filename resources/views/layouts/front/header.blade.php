@@ -60,6 +60,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ URL::to('front/css/style.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('front/css/yt-embed.css') }}" rel="stylesheet">
 
     
     
