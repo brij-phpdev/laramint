@@ -4,7 +4,7 @@
 @section("content")
 <div class="container-xxl bg-primary hero-header">
     <div class="container px-lg-5">
-        <div class="row">
+        <div class="row mb-4">
             <div class="col-12 text-center">
                 <span class="blink-image text-warning text-bold" >
                     उत्तर प्रदेश सरकार द्वारा <strong>ओ.वि.सी. वर्ग</strong> के छात्र - छात्राओं  के लिए सुनहरा अवसर(2023-24) <u>नि:शुल्क</u> ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम
@@ -21,14 +21,14 @@
                 <a href="" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</a>
 <!--                <a href="{{ route('front.courses') }}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Courses</a>-->
             </div>
-            <div class="col-lg-6 text-center text-lg-start">
-                <picture>
-                    <source type="image/webp" srcset="front/img/hero.webp">
-                    <source type="image/png" srcset="front/img/hero.webp.png">
-                    <img class="img-fluid animated zoomIn" src="front/img/hero.webp" alt="">
-                </picture>
-                
+            <div class="col-lg-6 block-comment text-lg-start">                
+                <video id="icet-coaching-center-video" poster="poster.jpg" controls autoplay muted>
+                    <source src="front/video/icet-computer-coaching-center-in-agra.mp4" type="video/mp4">
+<!--                    <source src="movie.ogg" type="video/ogg">-->
+                    Your browser does not support the video tag.
+                </video>
             </div>
+            
         </div>
         <div class="row mt-5">
 
@@ -36,19 +36,13 @@
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
                 </a>
             <?php 
-            $filename_top = 'course/July-2023-banner.jpeg';
-            $filetype_top = pathinfo($filename_top, PATHINFO_EXTENSION);
-            $imgbinary_top = fread(fopen($filename_top, "r"), filesize($filename_top));
-            $file_url_top = 'data:image/' . $filetype_top . ';base64,' . base64_encode($imgbinary_top);
-
-            $filename = 'course/free-obc-program-O-level-2023-24.webp';
-            $filetype = pathinfo($filename, PATHINFO_EXTENSION);
-            $imgbinary = fread(fopen($filename, "r"), filesize($filename));
-            $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
-//                echo $file_url;
+                $filename = 'course/O-Level-2023-24.jpeg';
+                $filetype = pathinfo($filename, PATHINFO_EXTENSION);
+                $imgbinary = fread(fopen($filename, "r"), filesize($filename));
+                $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
             ?>
             <a href="{{route('landingPage','free-o-level-2023-24#contact')}}">
-                <img src="{{$file_url_top}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
+                <img src="{{$file_url}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
             </a>
             <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
