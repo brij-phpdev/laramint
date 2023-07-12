@@ -13,9 +13,9 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
     <div class="container px-lg-5">
         <div class="row mb-4">
             <div class="col-12 text-center">
-                <span class="blink-image text-warning text-bold" >
-                    उत्तर प्रदेश सरकार द्वारा <strong>ओ.वि.सी. वर्ग</strong> के छात्र - छात्राओं  के लिए सुनहरा अवसर(2023-24) <u>नि:शुल्क</u> ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम
-                    <a class="btn btn-warning" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                <span class="text-warning text-bold" >
+                    उत्तर प्रदेश सरकार द्वारा <strong>ओ.वि.सी. वर्ग</strong> के छात्र - छात्राओं  के लिए सुनहरा अवसर(2023-24) <u>नि:शुल्क</u> ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम&nbsp;&nbsp;
+                    <a class="btn btn-warning blink-image" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
                         <i class="fa fa-arrow-right"></i> {{ __('Click Here') }}
                     </a>
                 </span>
@@ -33,10 +33,9 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                     <div class="video-background-content container h-100">
                         <div class="d-flex h-100 text-center align-items-center">
                             <div class="w-100 text-white">
-                                <h2 class="display-4 text-secondary mb-2">Lead to Success with ICET Agra</h2>
-                                <p class="lead mb-1">Institute of Computing With Enhanced Technology, Accredited By National Institute of Electronics &amp; Information Technology (NIELT) Govt. of India and UPDESCO (U.P. Govt) Authorized Training Center.</p>
-                                <p class="lead mt-3 text-small">Register today for O Level By <a href="{{route('landingPage','free-o-level-2023-24#contact')}}" class="text-white">
-                                        <u>ICET Agra</u></a>
+                                <h1 class="display-4 text-secondary mb-5">Lead to Success with ICET Agra</h1>
+                                <p class="mt-5 mb-5 text-white bg-gray">An Institute of Computing With Enhanced Technology, Accredited By National Institute of Electronics &amp; Information Technology (NIELT) Govt. of India and UPDESCO (U.P. Govt) Authorized Training Center.</p>
+                                <p class="mt-5 text-sm"><a href="{{route('landingPage','free-o-level-2023-24#contact')}}" class="btn btn-primary text-white blink-image">Register today</a> for O Level By <u>ICET Agra</u>
                                 </p>
                             </div>
                         </div>
