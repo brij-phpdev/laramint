@@ -113,20 +113,17 @@
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
                 </a>
                 <?php 
-                $filename_top = 'course/July-2023-banner.jpeg';
-                $filetype_top = pathinfo($filename_top, PATHINFO_EXTENSION);
-                $imgbinary_top = fread(fopen($filename_top, "r"), filesize($filename_top));
-                $file_url_top = 'data:image/' . $filetype_top . ';base64,' . base64_encode($imgbinary_top);
+//                $filename_top = 'course/O-Level-2023-24';
+//                $filetype_top = pathinfo($filename_top, PATHINFO_EXTENSION);
+//                $imgbinary_top = fread(fopen($filename_top, "r"), filesize($filename_top));
+//                $file_url_top = 'data:image/' . $filetype_top . ';base64,' . base64_encode($imgbinary_top);
                 
-                $filename = 'course/free-obc-program-O-level-2023-24.webp';
+                $filename = 'course/O-Level-2023-24.jpeg';
                 $filetype = pathinfo($filename, PATHINFO_EXTENSION);
                 $imgbinary = fread(fopen($filename, "r"), filesize($filename));
                 $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
-//                echo $file_url;
                 ?>
-                <img src="{{$file_url_top}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
-                <hr/>
-                <img src="{{$file_url}}" class="img-fluid" alt="Free OBC programm O level 2023-24" />
+                <img src="{{$file_url}}" class="img-fluid" alt="O level 2023-24" />
             </div>
             <div class="modal-footer">
                 <a class="btn btn-primary" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
