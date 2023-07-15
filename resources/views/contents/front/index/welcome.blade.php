@@ -43,7 +43,7 @@
 //                echo $file_url;
             ?>
             <a href="{{route('landingPage','free-o-level-2023-24#contact')}}">
-                <img src="{{$file_url_top}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
+                <img src="{{$file_url}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
             </a>
             <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
