@@ -2,79 +2,55 @@
 
 
 @section("content")
-
-@php
-function getEncodedVideoString($type, $file) {
-return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($file));
-}
-@endphp
-
 <div class="container-xxl bg-primary hero-header">
     <div class="container px-lg-5">
-        <div class="row mb-4">
+        <div class="row">
             <div class="col-12 text-center">
-                <span class="text-warning text-bold" >
-                    उत्तर प्रदेश सरकार द्वारा <strong>ओ.वि.सी. वर्ग</strong> के छात्र - छात्राओं  के लिए सुनहरा अवसर(2023-24) <u>नि:शुल्क</u> ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम&nbsp;&nbsp;
-                    <a class="btn btn-warning blink-image" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                <span class="blink-image text-warning text-bold" >
+                    उत्तर प्रदेश सरकार द्वारा छात्र - छात्राओं के लिए सुनहरा अवसर(2023-24)ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम
+                    <a class="btn btn-warning" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
                         <i class="fa fa-arrow-right"></i> {{ __('Click Here') }}
                     </a>
                 </span>
             </div>
         </div>
         <div class="row g-5 align-items-end">
-            <div class="col-lg-12 block-comment text-lg-start">                
-                <div class="video-background-holder">
-                    <div class="video-background-overlay"></div>
-                    <video id="icet-coaching-center-video" poster="poster.jpg" controls preload="true" autoplay loop muted>
-                        <source type="video/mp4" src="<?php echo getEncodedVideoString('mp4', 'front/video/icet-computer-coaching-center-in-agra.mp4'); ?>">
-    <!--                    <source src="movie.ogg" type="video/ogg">-->
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="video-background-content container h-100">
-                        <div class="d-flex h-100 text-center align-items-center">
-                            <div class="w-100 text-white">
-                                <h1 class="display-4 text-secondary mb-5">Lead to Success with ICET Agra</h1>
-                                <p class="mt-5 mb-5 text-white bg-gray">An Institute of Computing With Enhanced Technology, Accredited By National Institute of Electronics &amp; Information Technology (NIELT) Govt. of India and UPDESCO (U.P. Govt) Authorized Training Center.</p>
-                                <p class="mt-5 text-sm"><a href="{{route('landingPage','free-o-level-2023-24#contact')}}" class="btn btn-primary text-white blink-image">Register today</a> for O Level By <u>ICET Agra</u>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="text-white mb-4 animated slideInDown">Lead to Success with ICET Agra</h1>
+                <p class="text-white pb-3 animated slideInDown">Institute of Computing With Enhanced Technology, Accredited By National Institute of Electronics &amp; Information Technology (NIELT) Govt. of India and UPDESCO (U.P. Govt) Authorized Training Center.</p>
+                <a href="" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</a>
+<!--                <a href="{{ route('front.courses') }}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Courses</a>-->
+            </div>
+            <div class="col-lg-6 text-center text-lg-start">
+                <picture>
+                    <source type="image/webp" srcset="front/img/hero.webp">
+                    <source type="image/png" srcset="front/img/hero.webp.png">
+                    <img class="img-fluid animated zoomIn" src="front/img/hero.webp" alt="">
+                </picture>
+                
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-7">
-<!--                <a class="btn-muted btn btn-sm btn-secondary" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
-                    <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
-                </a>-->
-                <?php
-                $filename = 'course/O-Level-2023-24.jpeg';
-                $filetype = pathinfo($filename, PATHINFO_EXTENSION);
-                $imgbinary = fread(fopen($filename, "r"), filesize($filename));
-                $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
-                ?>
-                <a href="{{route('landingPage','free-o-level-2023-24#contact')}}">
-                    <img src="{{$file_url}}" class="img-fluid border bg-dark" alt="Free OBC programm O level July 2023-24" />
-                </a>
-                <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+
+            <a class="btn-block btn btn-sm btn-secondary mb-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
                 </a>
-            </div>
-            <div class="col-5 mt-2">
-                <div class="my-5 text-center
-                     embed-responsive embed-responsive-21by9">
-                    <iframe class="border embed-responsive-item" src="https://www.youtube.com/embed/r_U_uWpHaJY" title="Why Need O Level Computer Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="tutorial container text-center my-5
-                     embed-responsive embed-responsive-16by9">
-                    <iframe class="border-2 embed-responsive-item" src="https://www.youtube.com/embed/oCvQSBbvm1k" title="O Level Computer Course Information" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
+            <?php 
+            $filename = 'course/O-Level-2023-24.jpeg';
+            $filetype = pathinfo($filename, PATHINFO_EXTENSION);
+            $imgbinary = fread(fopen($filename, "r"), filesize($filename));
+            $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
+//                echo $file_url;
+            ?>
+            <a href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                <img src="{{$file_url_top}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
+            </a>
+            <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                    <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
+                </a>
         </div>
     </div>
-
+    
 </div>
 <!-- Department Start -->
 @if(count($departments) > 1)
@@ -136,17 +112,6 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                     <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="front/img/about.webp">
                 </picture>      
             </div>
-        </div>
-        <div class="row mt-3 align-items-center g-5 d-none">
-
-            <div class="col-10 col-sm-8 col-lg-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-
         </div>
     </div>
 </div>
@@ -287,12 +252,12 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
         <p class="section-title text-secondary justify-content-center"><span></span>Testimonial<span></span></p>
         <h1 class="text-center mb-5">What Our Students Say!</h1>
         <div class="owl-carousel testimonial-carousel">
-
-
-            @forelse ($testimonials as $testimonial)
-            <x-front.testimonial :testimonial="$testimonial"/>
-            @empty
-            @endforelse
+            
+            
+                        @forelse ($testimonials as $testimonial)
+                        <x-front.testimonial :testimonial="$testimonial"/>
+                        @empty
+                        @endforelse
 
         </div>
     </div>
@@ -314,58 +279,58 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
 
             <div class="col-4 ">
                 <!-- Card -->
-                <!--                <div
-                                  class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
-                                  style="background-image: url('https://voters.eci.gov.in/static/media/Portallogo.239672214918b407e9c7d3e4312b8ac4.svg'); background-position: center; background-attachment: fixed;"
-                                >-->
-                <div class="card-body bg-light rounded">
+<!--                <div
+                  class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
+                  style="background-image: url('https://voters.eci.gov.in/static/media/Portallogo.239672214918b407e9c7d3e4312b8ac4.svg'); background-position: center; background-attachment: fixed;"
+                >-->
+                  <div class="card-body bg-light rounded">
                     <h5 class="card-title">Voter ID Card</h5>
                     <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
-                        (Election Office Agra, U.P. Govt.)
+                       (Election Office Agra, U.P. Govt.)
                     </p>
                     <a href="#!" class="btn btn-outline-light">&nbsp;</a>
+                  </div>
                 </div>
+                <!-- Card -->
             </div>
-            <!-- Card -->
-        </div>
-
-
-        <div class="col-4 ">
-            <!-- Card -->
-            <!--                <div
-                              class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
-                              style="background-image: url('https://sewayojan.up.nic.in/webassets/images/upgovt_mri.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
-                            >-->
-            <div class="card-body bg-light rounded">
-                <h5 class="card-title">Berojgaari Bhatta</h5>
-                <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
-                    Berojgaari Bhatta (Regional Employment Office, Agra, U.P. Govt.)
-                </p>
-                <a href="#!" class="btn btn-outline-light">&nbsp;</a>
+            
+            
+            <div class="col-4 ">
+                <!-- Card -->
+<!--                <div
+                  class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
+                  style="background-image: url('https://sewayojan.up.nic.in/webassets/images/upgovt_mri.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
+                >-->
+                  <div class="card-body bg-light rounded">
+                    <h5 class="card-title">Berojgaari Bhatta</h5>
+                    <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
+                       Berojgaari Bhatta (Regional Employment Office, Agra, U.P. Govt.)
+                    </p>
+                    <a href="#!" class="btn btn-outline-light">&nbsp;</a>
+                  </div>
+                </div>
+                <!-- Card -->
             </div>
-        </div>
-        <!-- Card -->
-    </div>
-
-    <div class="col-4 ">
-        <!-- Card -->
-        <!--                <div
-                          class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
-                          style="background-image: url('https://www.upmsp.edu.in/images/logonamebig.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
-                        >-->
-        <div class="card-body bg-light rounded">
-            <h5 class="card-title">Kanya Vidhya Dhan</h5>
-            <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
-                (Madhyamik Shiksha Parishad, Agra, U.P. Govt.)
-            </p>
-            <a href="#!" class="btn btn-outline-light">&nbsp;</a>
-        </div>
-    </div>
-    <!-- Card -->
-</div>
-
-
-
+            
+            <div class="col-4 ">
+                <!-- Card -->
+<!--                <div
+                  class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
+                  style="background-image: url('https://www.upmsp.edu.in/images/logonamebig.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
+                >-->
+                  <div class="card-body bg-light rounded">
+                    <h5 class="card-title">Kanya Vidhya Dhan</h5>
+                    <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
+                        (Madhyamik Shiksha Parishad, Agra, U.P. Govt.)
+                    </p>
+                    <a href="#!" class="btn btn-outline-light">&nbsp;</a>
+                  </div>
+                </div>
+                <!-- Card -->
+            </div>
+            
+            
+            
 <!--            <div class="col-3">
                 
                  Card 
@@ -383,35 +348,35 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                 </div>
                  Card 
             </div>-->
+                
+                
+            </div>
+            
+            
+            
+            <div class="col-md-12 text-light text-left wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                
+            </div>
+            <div class="col-md-12 text-light text-left wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
 
 
-</div>
 
+                <ul class="list-inline mb-5" id="work-flters">
+                    <li class="mx-2"><i class="bi bi-check"></i>1. Voter ID Card (Election Office Agra, U.P. Govt.)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>2. Berojgaari Bhatta (Reginal Employment Office, Agra, U.P. Govt.)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>3. Kanya Vidhya Dhan (Madhymik Shiksha Parishad, Agra, U.P. Govt.)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>4. Scholarship Data Entry (Madhymik Shiksha Parishad, Agra, U.P. Govt.)   </li>
+                    <li class="mx-2"><i class="bi bi-check"></i>5. Criminal Crime Tracking Networking System CCTNS (Police Dept, Agra  U.P. Govt.)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>6. Lokwani Kendra , Agra (U.P. Govt)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>7. Course on Computer Concepts CCC (Online Exam Center, NIELIT Govt of India)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>8. E- Commerce Training (Handicraft Department, Govt of India)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>9. Authorized Computer Training Institute by UPDESCO (U.P. Govt)</li>
+                    <li class="mx-2"><i class="bi bi-check"></i>10. Authorized Computer Training Institute for O Level by NIELIT (Govt. of India)</li>
+                </ul>
+            </div>
 
-
-<div class="col-md-12 text-light text-left wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-
-</div>
-<div class="col-md-12 text-light text-left wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-
-
-
-    <ul class="list-inline mb-5" id="work-flters">
-        <li class="mx-2"><i class="bi bi-check"></i>1. Voter ID Card (Election Office Agra, U.P. Govt.)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>2. Berojgaari Bhatta (Reginal Employment Office, Agra, U.P. Govt.)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>3. Kanya Vidhya Dhan (Madhymik Shiksha Parishad, Agra, U.P. Govt.)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>4. Scholarship Data Entry (Madhymik Shiksha Parishad, Agra, U.P. Govt.)   </li>
-        <li class="mx-2"><i class="bi bi-check"></i>5. Criminal Crime Tracking Networking System CCTNS (Police Dept, Agra  U.P. Govt.)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>6. Lokwani Kendra , Agra (U.P. Govt)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>7. Course on Computer Concepts CCC (Online Exam Center, NIELIT Govt of India)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>8. E- Commerce Training (Handicraft Department, Govt of India)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>9. Authorized Computer Training Institute by UPDESCO (U.P. Govt)</li>
-        <li class="mx-2"><i class="bi bi-check"></i>10. Authorized Computer Training Institute for O Level by NIELIT (Govt. of India)</li>
-    </ul>
-</div>
-
-</div>
-</div>
+        </div>
+    </div>
 </div>
 
 <!--Work experience ends here-->
@@ -428,11 +393,11 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
                         <picture>
-                            <source type="image/webp" srcset="front/img/monika.webp">
-                            <source type="image/png" srcset="front/img/monika.png">
-                            <img class="img-fluid rounded-circle mb-4" src="front/img/monika.webp" alt="monika">
-                        </picture>
-
+                    <source type="image/webp" srcset="front/img/monika.webp">
+                    <source type="image/png" srcset="front/img/monika.png">
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/monika.webp" alt="monika">
+                </picture>
+                        
                         <h5>Monika Maam</h5>
                         <span>Sr. Counselor cum Admission Head</span>
                     </div>
@@ -448,11 +413,11 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
                         <picture>
-                            <source type="image/webp" srcset="front/img/arvind-sutail.webp">
-                            <source type="image/png" srcset="front/img/arvind-sutail.png">
-                            <img class="img-fluid rounded-circle mb-4" src="front/img/arvind-sutail.webp" alt="arvind">
-                        </picture>
-
+                    <source type="image/webp" srcset="front/img/arvind-sutail.webp">
+                    <source type="image/png" srcset="front/img/arvind-sutail.png">
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/arvind-sutail.webp" alt="arvind">
+                </picture>
+                        
                         <h5>Arvind Sutail</h5>
                         <span>Managing Director</span>
                     </div>
@@ -468,11 +433,11 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
                         <picture>
-                            <source type="image/webp" srcset="front/img/Lavi-lalwani.webp">
-                            <source type="image/png" srcset="front/img/Lavi-lalwani.png">
-                            <img class="img-fluid rounded-circle mb-4" src="front/img/Lavi-lalwani.webp" alt="Lavi lalwani">
-                        </picture>
-
+                    <source type="image/webp" srcset="front/img/Lavi-lalwani.webp">
+                    <source type="image/png" srcset="front/img/Lavi-lalwani.png">
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/Lavi-lalwani.webp" alt="Lavi lalwani">
+                </picture>
+                        
                         <h5>Lavi Lalwani</h5>
                         <span>Role Sr programing faculty</span>
                     </div>
@@ -490,11 +455,11 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
                         <picture>
-                            <source type="image/webp" srcset="front/img/amaan-ahmed.webp">
-                            <source type="image/png" srcset="front/img/amaan-ahmed.png">
-                            <img class="img-fluid rounded-circle mb-4" src="front/img/amaan-ahmed.webp" alt="monika">
-                        </picture>
-
+                    <source type="image/webp" srcset="front/img/amaan-ahmed.webp">
+                    <source type="image/png" srcset="front/img/amaan-ahmed.png">
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/amaan-ahmed.webp" alt="monika">
+                </picture>
+                        
                         <h5>Amaan Ahmed</h5>
                         <span>Sr Programing Faculty</span>
                     </div>
@@ -511,11 +476,11 @@ return 'data:video/' . $type . ';base64,' . base64_encode(file_get_contents($fil
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
                         <picture>
-                            <source type="image/webp" srcset="front/img/CTO-Brij-Raj-Singh.webp">
-                            <source type="image/png" srcset="front/img/CTO-Brij-Raj-Singh.png">
-                            <img class="img-fluid rounded-circle mb-4" src="front/img/CTO-Brij-Raj-Singh.webp" alt="brijraj">
-                        </picture>
-
+                    <source type="image/webp" srcset="front/img/CTO-Brij-Raj-Singh.webp">
+                    <source type="image/png" srcset="front/img/CTO-Brij-Raj-Singh.png">
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/CTO-Brij-Raj-Singh.webp" alt="brijraj">
+                </picture>
+                        
                         <h5>Brij Raj Singh</h5>
                         <span>IT Consultant</span>
                     </div>
