@@ -16,3 +16,4 @@ yarn-error.log
 /nbproject/private/
 .htaccess
 index.php
+deploy.sh
