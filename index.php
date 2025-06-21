@@ -1,2 +1,2 @@
 <?php
-header('Location: publi/');
+header('Location: public/');

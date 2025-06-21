@@ -15,12 +15,13 @@ return new class extends Migration
     {
         Schema::create('term_user', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('term_id');
-            $table->foreign('term_id')->references('id')->on('terms');
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->unsignedBigInteger('role_id');
-            $table->foreign('role_id')->references('id')->on('roles');
+            $table->unsignedBigInteger('term_id')->index();
+            $table->unsignedBigInteger('user_id')->index();
+            $table->unsignedBigInteger('role_id')->index();
+
+            $table->foreign('term_id')->references('id')->on('terms')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
             $table->timestamps();
         });
     }
