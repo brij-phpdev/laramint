@@ -36,7 +36,7 @@
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
                 </a>
             <?php 
-            $filename = 'course/O-Level-2023-24.jpeg';
+            $filename = 'course/O-level-2025-26.jpeg';
             $filetype = pathinfo($filename, PATHINFO_EXTENSION);
             $imgbinary = fread(fopen($filename, "r"), filesize($filename));
             $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
@@ -472,7 +472,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+<!--            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
                         <picture>
@@ -489,6 +489,25 @@
                         <a class="btn btn-square mx-1" target="_blank" itemprop="https://twitter.com/BrijRajSingh27" href="https://twitter.com/BrijRajSingh27"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square mx-1" target="_blank" itemprop="https://www.instagram.com/brijrajsingh27/" href="https://www.instagram.com/brijrajsingh27/"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-square mx-1" target="_blank" itemprop="https://www.linkedin.com/in/brijrajsingh27/" href="https://www.linkedin.com/in/brijrajsingh27/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>-->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
+                    <div class="text-center border-bottom p-4">
+                        <picture>
+
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/Rishabh-Dwivedi.jpeg" alt="Rishabh Dwivedi">
+                </picture>
+                        
+                        <h5>Rishabh Dwivedi</h5>
+                        <span>Faculty Computer Basic Fundamental (IT Tools & Web Development)</span>
+                    </div>
+                    <div class="d-flex justify-content-center p-4">
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="#" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="#" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="#" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="#" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
