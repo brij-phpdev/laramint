@@ -432,9 +432,9 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
-                        <picture>
+                        
                     <img class="img-fluid rounded-circle mb-4" src="front/img/Zakir-khan.jpeg alt="Zakir Khan">
-                </picture>
+                
                         
                         <h5>Jakir Khan</h5>
                         <span>Computer Basic Fundamental (IT Tools)</span>
