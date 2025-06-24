@@ -43,7 +43,7 @@
 //                echo $file_url;
             ?>
             <a href="{{route('landingPage','free-o-level-2023-24#contact')}}">
-                <img src="{{$file_url}}" class="img-fluid" alt="Free OBC programm O level July 2023-24" />
+                <img src="{{$file_url}}" class="img-fluid" alt="Free OBC programm O level July 2025-26" />
             </a>
             <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
@@ -433,19 +433,17 @@
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
                         <picture>
-                    <source type="image/webp" srcset="front/img/Lavi-lalwani.webp">
-                    <source type="image/png" srcset="front/img/Lavi-lalwani.png">
-                    <img class="img-fluid rounded-circle mb-4" src="front/img/Lavi-lalwani.webp" alt="Lavi lalwani">
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/Zakir-khan.jpeg alt="Zakir Khan">
                 </picture>
                         
-                        <h5>Lavi Lalwani</h5>
-                        <span>Role Sr programing faculty</span>
+                        <h5>Jakir Khan</h5>
+                        <span>Computer Basic Fundamental (IT Tools)</span>
                     </div>
                     <div class="d-flex justify-content-center p-4">
-                        <a class="btn btn-square mx-1" target="_blank" href="https://www.facebook.com/profile.php?id=100093926079059" itemprop="https://www.facebook.com/profile.php?id=100093926079059"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square mx-1" target="_blank" href="https://twitter.com/LaviLalwani21?s=20" itemprop="https://twitter.com/LaviLalwani21?s=20"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square mx-1" target="_blank" href="https://www.instagram.com/lavi._21?r=nametag" itemprop="https://www.instagram.com/lavi._21?r=nametag"><i class="fab fa-instagram"></i></a>
-                        <!--<a class="btn btn-square mx-1" target="_blank" href=""><i class="fab fa-linkedin-in"></i></a>-->
+<!--                        <a class="btn btn-square mx-1" target="_blank" href="https://www.facebook.com/profile.php?id=100093926079059" itemprop="https://www.facebook.com/profile.php?id=100093926079059"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" href="https://twitter.com/LaviLalwani21?s=20" itemprop="https://twitter.com/LaviLalwani21?s=20"><i class="fab fa-twitter"></i></a>-->
+                        <a class="btn btn-square mx-1" target="_blank" href="https://www.instagram.com/Jakir_030700" itemprop="https://www.instagram.com/Jakir_030700"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" href="https://www.linkedin.com/in/jakir-gaddi-344639330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>

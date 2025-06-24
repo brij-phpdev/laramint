@@ -118,7 +118,7 @@
 //                $imgbinary_top = fread(fopen($filename_top, "r"), filesize($filename_top));
 //                $file_url_top = 'data:image/' . $filetype_top . ';base64,' . base64_encode($imgbinary_top);
                 
-                $filename = 'course/O-Level-2023-24.jpeg';
+                $filename = 'course/O-level-2025-26.jpeg';
                 $filetype = pathinfo($filename, PATHINFO_EXTENSION);
                 $imgbinary = fread(fopen($filename, "r"), filesize($filename));
                 $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
