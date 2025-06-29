@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <span class="blink-image text-warning text-bold" >
-                    उत्तर प्रदेश सरकार द्वारा छात्र - छात्राओं के लिए सुनहरा अवसर(2023-24)ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम
+                    उत्तर प्रदेश सरकार द्वारा छात्र - छात्राओं के लिए सुनहरा अवसर ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम
                     <a class="btn btn-warning" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
                         <i class="fa fa-arrow-right"></i> {{ __('Click Here') }}
                     </a>
@@ -429,26 +429,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
-                    <div class="text-center border-bottom p-4">
-                        <picture>
-                    <img class="img-fluid rounded-circle mb-4" src="front/img/Zakir-khan.jpeg" alt="Zakir Khan">
-                </picture>
-                        
-                        <h5>Jakir Khan</h5>
-                        <span>Computer Basic Fundamental (IT Tools)</span>
-                    </div>
-                    <div class="d-flex justify-content-center p-4">
-<!--                        <a class="btn btn-square mx-1" target="_blank" href="https://www.facebook.com/profile.php?id=100093926079059" itemprop="https://www.facebook.com/profile.php?id=100093926079059"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square mx-1" target="_blank" href="https://twitter.com/LaviLalwani21?s=20" itemprop="https://twitter.com/LaviLalwani21?s=20"><i class="fab fa-twitter"></i></a>-->
-                        <a class="btn btn-square mx-1" target="_blank" href="https://www.instagram.com/Jakir_030700" itemprop="https://www.instagram.com/Jakir_030700"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square mx-1" target="_blank" href="https://www.linkedin.com/in/jakir-gaddi-344639330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row g-4 mt-4">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
                     <div class="text-center border-bottom p-4">
@@ -469,6 +449,10 @@
                     </div>
                 </div>
             </div>
+            
+        </div>
+        <div class="row g-4 mt-4">
+            
 
 <!--            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
@@ -509,6 +493,67 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
+                    <div class="text-center border-bottom p-4">
+                        <picture>
+
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/prashant-kumar.jpeg" alt="Prashant Kumar">
+                </picture>
+                        
+                        <h5>Prashant Kumar</h5>
+                        <span>Faculty Computer Basic Fundamental (IT Tools & Web Development)</span>
+                    </div>
+                    <div class="d-flex justify-content-center p-4">
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="https://www.facebook.com/share/19RTrWijgX/" href="https://www.facebook.com/share/19RTrWijgX/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="https://x.com/PrashantKu79889?t=C52-p4qflyn8U9YB0LX5xQ&s=09" href="https://x.com/PrashantKu79889?t=C52-p4qflyn8U9YB0LX5xQ&s=09"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="https://www.instagram.com/prashant.kumar98_?igsh=MTN5NHEyNGE0bDBldg==" href="https://www.instagram.com/prashant.kumar98_?igsh=MTN5NHEyNGE0bDBldg=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="https://www.linkedin.com/in/prashant-kumar-226154284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" href="https://www.linkedin.com/in/prashant-kumar-226154284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
+                    <div class="text-center border-bottom p-4">
+                        <picture>
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/Zakir-khan.jpeg" alt="Zakir Khan">
+                </picture>
+                        
+                        <h5>Jakir Khan</h5>
+                        <span>Computer Basic Fundamental (IT Tools)</span>
+                    </div>
+                    <div class="d-flex justify-content-center p-4">
+<!--                        <a class="btn btn-square mx-1" target="_blank" href="https://www.facebook.com/profile.php?id=100093926079059" itemprop="https://www.facebook.com/profile.php?id=100093926079059"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" href="https://twitter.com/LaviLalwani21?s=20" itemprop="https://twitter.com/LaviLalwani21?s=20"><i class="fab fa-twitter"></i></a>-->
+                        <a class="btn btn-square mx-1" target="_blank" href="https://www.instagram.com/Jakir_030700" itemprop="https://www.instagram.com/Jakir_030700"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" href="https://www.linkedin.com/in/jakir-gaddi-344639330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-4">
+            
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item bg-light rounded" itemscope itemtype="https://schema.org/Person">
+                    <div class="text-center border-bottom p-4">
+                        <picture>
+
+                    <img class="img-fluid rounded-circle mb-4" src="front/img/mohan-kumar.jpeg" alt="Mohan Kumar">
+                </picture>
+                        
+                        <h5>Mohan Kumar</h5>
+                        <span>Faculty ITeS Communicative Voice</span>
+                    </div>
+                    <div class="d-flex justify-content-center p-4">
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="#" href="https://www.facebook.com/profile.php?id=100008328735911"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="#" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="https://www.instagram.com/mohankumar1532?utm_source=qr&igsh=NTcyOG50cHA2Y25z" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square mx-1" target="_blank" itemprop="#" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>
