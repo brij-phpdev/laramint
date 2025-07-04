@@ -120,9 +120,9 @@ $referrer_url = $_SERVER['HTTP_REFERER'] ?? '';
                     <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
                         <div>
                             <h1>नि:शुल्क ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम</h1>
-                            <h2>वर्ष 2023-24
-                                उत्तर प्रदेश सरकार द्वारा ओ.वि.सी. वर्ग के छात्र - छात्राओं  के लिए सुनहरा अवसर. </h2>
-                            <p>पूरी जानकारी के लिए यहां <a target="_blank" class="btn btn-primary" href="{{ URL::asset('files/obc-free-o-level-course-june-2023.pdf') }}">क्लिक करें</a>
+                            <h2>वर्ष {{ date('Y') . '-' . substr(date('Y') + 1, -2) }}
+                                उत्तर प्रदेश सरकार द्वारा छात्र - छात्राओं  के लिए सुनहरा अवसर. </h2>
+                            <!--<p>पूरी जानकारी के लिए यहां <a target="_blank" class="btn btn-primary" href="{{ URL::asset('files/obc-free-o-level-course-june-2023.pdf') }}">क्लिक करें</a>-->
                                 
                                 <br/>
                                 कृपया नीचे दिया गया <a href="#contact" class="btn btn-warning">फॉर्म भरें</a>। <br/>किसी भी संदेह की स्थिति में कृपया <a href="#contact" class="btn btn-info">संपर्क करें</a>
@@ -261,14 +261,14 @@ $referrer_url = $_SERVER['HTTP_REFERER'] ?? '';
 
 
 
-                            <li data-aos="fade-up" data-aos-delay="200">
+<!--                            <li data-aos="fade-up" data-aos-delay="200">
                                 <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Is there any last date for the same?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                                     <p>
                                         Yes, 25th June 2023 is the last date for application.
                                     </p>
                                 </div>
-                            </li>
+                            </li>-->
 
                             <li data-aos="fade-up" data-aos-delay="300">
                                 <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">Any document(s) required? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
