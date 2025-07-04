@@ -8,7 +8,7 @@
             <div class="col-12 text-center">
                 <span class="blink-image text-warning text-bold" >
                     उत्तर प्रदेश सरकार द्वारा छात्र - छात्राओं के लिए सुनहरा अवसर ओ लेवल कंप्यूटर प्रशिक्षण कार्यक्रम
-                    <a class="btn btn-warning" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+                    <a class="btn btn-warning" href="{{ route('landingPage', ($landingPage->landing_page_url ?? 'free-o-level-2025-26') . '#contact') }}">
                         <i class="fa fa-arrow-right"></i> {{ __('Click Here') }}
                     </a>
                 </span>
@@ -31,10 +31,11 @@
             </div>
         </div>
         <div class="row mt-5">
-
-            <a class="btn-block btn btn-sm btn-secondary mb-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+            <a class="btn-block btn btn-sm btn-secondary mb-4" href="{{ route('landingPage', ($landingPage->landing_page_url ?? 'free-o-level-2025-26') . '#contact') }}">
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
                 </a>
+            
+
             <?php 
             $filename = 'course/O-level-2025-26.jpeg';
             $filetype = pathinfo($filename, PATHINFO_EXTENSION);
@@ -42,10 +43,10 @@
             $file_url = 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
 //                echo $file_url;
             ?>
-            <a href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+            <a href="{{ route('landingPage', ($landingPage->landing_page_url ?? 'free-o-level-2025-26') . '#contact') }}">
                 <img src="{{$file_url}}" class="img-fluid" alt="Free OBC programm O level July 2025-26" />
             </a>
-            <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{route('landingPage','free-o-level-2023-24#contact')}}">
+            <a class="btn-block btn btn-sm btn-secondary mt-4" href="{{ route('landingPage', ($landingPage->landing_page_url ?? 'free-o-level-2025-26') . '#contact') }}">
                     <i class="fa fa-arrow-right"></i> {{ __('Click here to Register') }}
                 </a>
         </div>

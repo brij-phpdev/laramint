@@ -28,6 +28,7 @@ class HomeServices
         $departments = $this->departmentRepository->limit(3);
         $courses = $this->courseRepository->getAllWith('Department', 'Terms');
         $testimonials = $this->testimonialRepository->getAll();
-        return compact('departments', 'courses','testimonials');
+        $landingPage = \App\Models\LandingPages::orderBy('id', 'desc')->first();
+        return compact('departments', 'courses','testimonials','landingPage');
     }
 }
