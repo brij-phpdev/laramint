@@ -68,6 +68,7 @@ class LandingPagesController extends Controller
         $student_docs->category = $request->caste_category;
         $student_docs->high_school_marks = $request->high_school_marks;
         $student_docs->high_school_grades = $request->high_school_grades;
+        $student_docs->place = $request->address;
         
         $student_docs->intermediate_marks = $request->intermediate_marks;
         $student_docs->intermediate_grades = $request->intermediate_grades;
