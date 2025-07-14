@@ -269,66 +269,81 @@
 
 <!--Work experience-->
 
-<div class="container-xxl bg-light fact- py-5 wow fadeInUp d-none" data-wow-delay="0.1s">
+<div class="container-xxl bg-light fact- py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-5 px-lg-5">
         <div class="wow fadeInUp" data-wow-delay="0.1s">
             <p class="section-title text-secondary justify-content-center"><span></span>Work Experience<span></span></p>
             <h1 class="text-center text-primary-emphasis mb-5">Proudly carried out projects</h1>
         </div>
 
-        <div class="row g-4">
+        
+            
+            <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+  <div class="d-flex text-center" style="gap: 1rem;">
+    <!-- Card 1 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Voter ID Card <br/>(Election Office Agra, U.P. Govt.)
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i>Berojgaari Bhatta <br/>(Regional Employment Office,<br/> Agra, U.P. Govt.)
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Kanya Vidhya Dhan <br/>(Madhymik Shiksha Parishad,<br/> Agra, U.P. Govt.)
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Scholarship Data Entry <br/>(Madhymik Shiksha Parishad,<br/> Agra, U.P. Govt.)
+      </div>
+    </div>
+    <!-- Add remaining cards similarly -->
+    <!-- Card 5 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Criminal Crime <br/>Tracking Networking System <br/>CCTNS (Police Dept, Agra, U.P. Govt.)
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Lokwani Kendra, <br/>Agra (U.P. Govt.)
+      </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Course on Computer Concepts CCC <br/>(Online Exam Center, <br/>NIELIT Govt of India)
+      </div>
+    </div>
+    <!-- Card 8 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> E-Commerce Training <br/>(Handicraft Department, <br/>Govt of India)
+      </div>
+    </div>
+    <!-- Card 9 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Authorized Computer <br/>Training Institute <br/>by UPDESCO (U.P. Govt.)
+      </div>
+    </div>
+    <!-- Card 10 -->
+    <div class="card" style="min-width: 300px;">
+      <div class="card-body">
+        <i class="bi bi-check"></i> Authorized Computer <br/>Training Institute for <br/>O Level by NIELIT <br/>(Govt. of India)
+      </div>
+    </div>
+  </div>
+</marquee>
 
-            <div class="col-4 ">
-                <!-- Card -->
-<!--                <div
-                  class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
-                  style="background-image: url('https://voters.eci.gov.in/static/media/Portallogo.239672214918b407e9c7d3e4312b8ac4.svg'); background-position: center; background-attachment: fixed;"
-                >-->
-                  <div class="card-body bg-light rounded">
-                    <h5 class="card-title">Voter ID Card</h5>
-                    <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
-                       (Election Office Agra, U.P. Govt.)
-                    </p>
-                    <a href="#!" class="btn btn-outline-light">&nbsp;</a>
-                  </div>
-                </div>
-                <!-- Card -->
-            </div>
-            
-            
-            <div class="col-4 ">
-                <!-- Card -->
-<!--                <div
-                  class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
-                  style="background-image: url('https://sewayojan.up.nic.in/webassets/images/upgovt_mri.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
-                >-->
-                  <div class="card-body bg-light rounded">
-                    <h5 class="card-title">Berojgaari Bhatta</h5>
-                    <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
-                       Berojgaari Bhatta (Regional Employment Office, Agra, U.P. Govt.)
-                    </p>
-                    <a href="#!" class="btn btn-outline-light">&nbsp;</a>
-                  </div>
-                </div>
-                <!-- Card -->
-            </div>
-            
-            <div class="col-4 ">
-                <!-- Card -->
-<!--                <div
-                  class="bg-image p-5 text-center shadow-1-strong rounded mb-5"
-                  style="background-image: url('https://www.upmsp.edu.in/images/logonamebig.png'); background-position: center; background-size: contain; background-repeat: no-repeat;"
-                >-->
-                  <div class="card-body bg-light rounded">
-                    <h5 class="card-title">Kanya Vidhya Dhan</h5>
-                    <p class="card-text text-dark-300 d-flex justify-content-center align-items-center">
-                        (Madhyamik Shiksha Parishad, Agra, U.P. Govt.)
-                    </p>
-                    <a href="#!" class="btn btn-outline-light">&nbsp;</a>
-                  </div>
-                </div>
-                <!-- Card -->
-            </div>
             
             
             
@@ -355,30 +370,7 @@
             
             
             
-            <div class="col-md-12 text-light text-left wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                
-            </div>
-            <div class="col-md-12 text-light text-left wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-
-
-
-                <ul class="list-inline mb-5" id="work-flters">
-                    <li class="mx-2"><i class="bi bi-check"></i>1. Voter ID Card (Election Office Agra, U.P. Govt.)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>2. Berojgaari Bhatta (Reginal Employment Office, Agra, U.P. Govt.)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>3. Kanya Vidhya Dhan (Madhymik Shiksha Parishad, Agra, U.P. Govt.)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>4. Scholarship Data Entry (Madhymik Shiksha Parishad, Agra, U.P. Govt.)   </li>
-                    <li class="mx-2"><i class="bi bi-check"></i>5. Criminal Crime Tracking Networking System CCTNS (Police Dept, Agra  U.P. Govt.)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>6. Lokwani Kendra , Agra (U.P. Govt)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>7. Course on Computer Concepts CCC (Online Exam Center, NIELIT Govt of India)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>8. E- Commerce Training (Handicraft Department, Govt of India)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>9. Authorized Computer Training Institute by UPDESCO (U.P. Govt)</li>
-                    <li class="mx-2"><i class="bi bi-check"></i>10. Authorized Computer Training Institute for O Level by NIELIT (Govt. of India)</li>
-                </ul>
-            </div>
-
         </div>
-    </div>
-</div>
 
 <!--Work experience ends here-->
 
