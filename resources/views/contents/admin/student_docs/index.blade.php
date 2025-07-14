@@ -59,10 +59,10 @@
                                     <a class="fab fa-whatsapp-square text-success" title="send reminder on whatsapp" href="https://wa.me/{{ $student_doc->mobile }}?text={{urlencode($whatsAppReminderMsg)}}" target="_blank"> WhatsApp Reminder</a>
                                 </td>
                                 <td>
-                                    {{ $student_doc->place }}
+                                    {{ $student_doc->email }}
                                 </td>
                                 <td>
-                                    {{ $student_doc->email }}
+                                    {{ $student_doc->place }}
                                 </td>
                                 <td>
                                     {{ $caste_categories[$student_doc->category] }}
