@@ -79,6 +79,7 @@ class StudentDocsController extends Controller
         $student_docs->mobile = $request->mobile;
         $student_docs->email = $request->email;
         $student_docs->father_name = $request->father_name;
+        $student_docs->place = $request->address;
         $student_docs->dob = $request->dob;
         $student_docs->category = $request->category;
         $student_docs->high_school_marks = $request->high_school_marks;

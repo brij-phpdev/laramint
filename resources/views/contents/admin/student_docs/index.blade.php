@@ -31,6 +31,7 @@
                                 <th scope="col">{{ __("Student Name") }}</th>
                                 <th scope="col">{{ __("Mobile") }}</th>
                                 <th scope="col">{{ __("Email") }}</th>
+                                <th scope="col">{{ __("Address") }}</th>
                                 <th scope="col">{{ __("Category") }}</th>
                                 <th scope="col">{{ __("Is Mobile Verified") }}</th>
                                 <th scope="col">{{ __("Is Email Verified") }}</th>
@@ -56,6 +57,9 @@
                                     <a class="fa fa-phone-alt text-primary" title="Call" href="tel:{{ $student_doc->mobile }}" target="_blank"> Call</a> |
                                     <a class="fa fa-sms text-warning" title="send sms on mobile" href="#" target="_blank"> Send SMS</a> |
                                     <a class="fab fa-whatsapp-square text-success" title="send reminder on whatsapp" href="https://wa.me/{{ $student_doc->mobile }}?text={{urlencode($whatsAppReminderMsg)}}" target="_blank"> WhatsApp Reminder</a>
+                                </td>
+                                <td>
+                                    {{ $student_doc->place }}
                                 </td>
                                 <td>
                                     {{ $student_doc->email }}
